@@ -19,7 +19,7 @@ app = express();
 
 mongoose
   .connect(
-    'mongodb+srv://brunocasteluci:<password>@yelpcamp-xg3gm.mongodb.net/test?retryWrites=true&w=majority',
+    'mongodb+srv://brunocasteluci:bruno123@yelpcamp-xg3gm.mongodb.net/test?retryWrites=true&w=majority',
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
