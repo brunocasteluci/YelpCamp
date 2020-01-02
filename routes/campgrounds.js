@@ -38,7 +38,6 @@ router.post('/', middleware.isLoggedIn, (req, res) => {
     description: dsc,
     author: author
   };
-  console.log(price);
 
   // Create new campground and save to the DB
   Campground.create(newCampground, (err, newlyCreated) => {
