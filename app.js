@@ -18,14 +18,11 @@ const commentRoutes = require('./routes/comments'),
 app = express();
 
 mongoose
-  .connect(
-    'mongodb+srv://brunocasteluci:bruno123@yelpcamp-xg3gm.mongodb.net/test?retryWrites=true&w=majority',
-    {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-      useFindAndModify: false
-    }
-  )
+  .connect('mongodb://localhost:27017/yelp_camp', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useFindAndModify: false
+  })
   .then(() => {
     console.log('Connected to DB');
   })
